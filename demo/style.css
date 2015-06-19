@@ -1,0 +1,12 @@
+@CHARSET "UTF-8";
+
+
+.block [class^=col-]{
+	background:#eef;
+	border-top:1px solid #aaa;
+	border-bottom:1px solid #aaa;
+	border-right:1px solid #aaa;
+	text-align:center;
+	height:30px;
+}
+.block [class^=col-]:FIRST-CHILD{border-left:1px solid #aaa}
