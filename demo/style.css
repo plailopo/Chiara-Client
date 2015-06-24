@@ -1,5 +1,31 @@
 @CHARSET "UTF-8";
 
+a{color:#ff9900;text-decoration:none;}
+
+.wrapper{width:1020px;position:relative;margin:0 auto;}
+
+header{
+	background-color:#222222;
+	color:#ffffff;
+	position:relative;
+}
+header .wrapper{height:200px;}
+
+header .logo{
+	position:absolute;
+	bottom:0px;
+	left:0px;
+}
+
+header .menu{
+	position:absolute;
+	bottom:0px;
+	right:0px;
+}
+
+header .menu li{float:left;padding:0 4px;}
+header .menu li a{padding:4px 10px;display:block;color:#dddddd;}
+header .menu li a:hover{color:#ffffff;}
 
 .block [class^=col-]{
 	background:#dde;
