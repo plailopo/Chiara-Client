@@ -477,6 +477,26 @@ $.extend(Chiara, {
 		});
 		
 	};
+	
+	$.fn.autoSaveForm = function(){
+		
+		$(this).change(function(){
+			$(this).saveForm();
+		});
+		
+	};
+	
+	$.fn.lockForm = function(){
+		$(this).each(function(){
+			$(this).find('input, select, textarea, button').prop('disabled', true);
+		});
+	};
+	
+	$.fn.unlockForm = function(){
+		$(this).each(function(){
+			$(this).find('input, select, textarea, button').prop('disabled', false);
+		});
+	};
 
 })( jQuery );
 
